@@ -1,0 +1,687 @@
+* {
+
+    margin: 0  ;
+    padding: 0 ;
+    box-sizing: border-box;
+
+}
+
+
+
+
+body, html {
+
+    width: 100% ;
+    font-family: 'Roboto' , sans-serif ;
+    font-size: 100;
+    color: var(--primary-color);
+    min-height: 100vh;
+    background-image: var(--gainsboro);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    
+
+
+}
+:root {
+
+    --primary-color: #4a4a4a ;
+    --nero: #1c1c1c ;
+    --dim-gray: #6d6d6d;
+    --gainsboro: #e6e6e6 ;
+    --black : #010101 ;
+    --dell:  #476930; 
+    --chelsea-cucumber :#86b049 ;
+    
+   
+}
+
+nav {
+
+    width: 100% ;
+    display:  flex;
+    align-items: center;
+    justify-content:  space-between;
+    padding: 10px 20px ;
+    background-image: linear-gradient( to right , #476930 , white);
+    box-shadow: inset 2px 0px 2px var(--gainsboro);
+    
+}
+
+nav .menu {
+    display: none;
+}
+
+nav .brand-name  {
+
+    font-size:  25px ;
+}
+
+nav .brand-name  h1{
+
+    font-family: 'Roboto', sans-serif;
+    font-weight:  700;
+    display: inline-block ;
+    color: var(--nero);
+
+}
+nav .brand-name  span {
+
+     color: var(--gainsboro);
+}
+
+
+nav .nav-links {
+
+ display: flex;
+ align-items: center ;
+ justify-content: space-between;
+ list-style-type: none;
+ min-width: 25% ;
+}  nav .nav-links a {
+
+    text-decoration: none;
+    color: var(--black);
+    padding:  1em ;
+    font-size:  1em ;
+    
+   
+
+
+
+}
+
+
+nav .nav-links a:hover  {
+
+   background: var(--dell);
+   color: var(--gainsboro);
+   border-radius: 2px ;
+   
+}
+main {
+
+    width: 100% ;
+   
+}
+
+
+
+
+main .hero {
+
+    width: 100% ;
+    height: auto;
+    background: linear-gradient(to right, var(--chelsea-cucumber),var(--gainsboro), white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+main .hero .title {
+
+
+    padding: 100px  0px  100px 200px  ;
+    font-size: 20px;
+    flex-basis: 50%;
+    align-self: flex-start;
+    border: 1px solid var(--gainsboro);
+    border-radius: 10% ;
+}
+
+main .hero .title h2 {
+
+    text-transform: uppercase;
+}
+
+main .hero .title small {
+    padding: 5px ;
+}
+
+main .hero  .background-image {
+
+    flex-basis: 30%;
+    margin-right: 200px;
+   
+    
+    
+    
+   
+   
+    
+
+}
+
+main .hero  .background-image img {
+    
+   width: 85%;
+
+}
+
+main .showcase {
+
+    padding: 20px ;
+    margin: 20px 0px ;
+}
+
+main   h3 {
+
+     
+
+     text-align: center;
+     text-transform: uppercase;
+     letter-spacing: 0.5em;
+     box-shadow: 0px 1px 10px var(--gainsboro);
+     border-radius: 80%;
+    
+     width: auto ;
+     padding: 1em ;
+     font-size: 100%;
+     text-align: center ;
+     display: inline-block;
+     position: relative;
+     left: 50% ;
+     transform: translateX(-50%);
+     margin: 10px ;
+
+     
+   
+     
+     
+}
+main h4 {
+
+    border-left: 5px solid var(--chelsea-cucumber);
+    text-transform: uppercase;
+    padding-left: 5px ;
+    margin-left: 2% ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+main .cards {
+
+    display: flex ;
+    width: 100% ;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 0 ;
+}
+
+main .cards .card {
+
+    flex-basis: 30%;
+    display: flex ;
+    flex-direction: column ;
+    box-shadow: 0 0 10px var(--chelsea-cucumber);
+    padding: 10px ;
+    border-radius:  10px;
+    margin-bottom: 20px ;
+
+
+}  main .cards .card  .card-title {
+
+    display: flex ;
+    align-items: center;
+    margin-bottom:30px ;
+    border-bottom: 1px solid var(--chelsea-cucumber);
+    padding: 5px ;
+    height: 35% ;
+
+    
+    
+}
+
+main .cards .card  .card-title .card-img {
+
+    width: 15% ;
+}
+main .cards .card  .card-title .card-text {
+
+    width: 90% ;
+    text-align: center;
+}
+
+main .cards .card  .card-title .card-img img {
+
+    width: 100% ;
+}
+
+
+main .dropdown {
+    
+    width: 70% ;
+    display: flex ;
+    flex-direction: column;
+    margin-left: 2% ;
+
+}
+
+
+
+main .dropdown [class$='item']   .title {
+
+    display: flex ;
+    justify-content: space-between;
+
+
+   
+    border-top: 0.1px solid var(--chelsea-cucumber);
+    border-left: 4px solid var(--chelsea-cucumber);
+    border-right: 1px solid var(--chelsea-cucumber);
+    border-bottom: 0.1px solid var(--chelsea-cucumber);
+    padding: 10px ;
+    
+   
+
+
+}
+
+main .dropdown [class$='item']   .title .text {
+
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+
+main .dropdown [class$='item']   .title .icon  {
+
+    width: 1% ;
+}
+
+
+main .dropdown [class$='item']   .title .icon  img  {
+    
+    width: 100% ;
+    transition: all 0.3s ease-in-out;
+}
+
+
+main .dropdown [class$='item']  .body {
+
+    padding: 30px 5px 10px 5px ;
+    border-left: 1px solid var(--gainsboro);
+    border-right: 1px solid var(--gainsboro);
+    background-color: var(--gainsboro);
+    color: var(--nero);
+    
+  
+       
+
+}
+main .dropdown [class$='item'] .body.toggle  {
+
+    display: none; 
+}
+main .dropdown [class$='item'] .title img.toggle-arrow {
+
+   transform: rotate(90deg);
+}
+
+main .dropdown [class$='item']  .body:last-child {
+
+
+    border-bottom: 1px solid var(--gainsboro);
+}
+
+.contact  {
+
+   
+    background-position: center;
+    
+    height: auto ;
+    
+    width:100% ;
+    
+    margin: auto;
+    
+    
+   
+    
+    
+
+
+}
+
+.contact .contact-info {
+    display:  flex;
+    align-items: center;
+    justify-content: left;
+    width: 40% ;
+    box-shadow: 0 0 5px var(--gainsboro);
+    
+}
+.contact .contact-info b {
+
+    display: inline-block;
+   
+
+
+    width: 5% 
+
+}
+
+.contact .contact-info a {
+    color: var(--nero);
+    display: inline-block;
+    margin: 30px ;
+    text-decoration: none;
+    box-shadow: inset 0 0 5px var(--chelsea-cucumber);
+    padding: 20px ;
+    border-radius: 20px;
+    transition: all .5s ease-in-out ;
+    
+}
+
+.contact .contact-info a:hover {
+
+    background-color: var(--chelsea-cucumber);
+    color: var(--gainsboro);
+}
+
+
+.contact  p  { 
+
+    margin-left: 2% ;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px;
+    
+    
+}
+
+
+
+.contact img {
+
+    width: 1.5em ;
+}
+
+
+.about {
+
+    height: auto ;
+    /* display:  flex;
+    flex-direction:  column; */
+    padding-left: 2%;
+    width: 100% ;
+}
+
+.about h5 {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-size: 20px;
+
+} 
+
+
+.about small {
+
+    display: inline-block;
+    color: var(--dim-gray);
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 30px ;
+  
+    
+}
+
+.about  p {
+
+    width: 50em ;
+  
+    line-height:2em ;
+    margin-bottom: 30px ;
+}
+
+
+section {
+
+    border-top: 1px solid var(--gainsboro);
+}
+
+
+
+footer {
+
+    width: 100% ;
+    background: var(--nero);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+footer .social-links {
+
+    display: flex ;
+    width: 50% ;
+   
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+footer .social-links li {
+
+    list-style-type: none;
+    width:8% ;   
+    height: 100% ;
+
+}
+footer .social-links li:first-child {
+
+    box-shadow:inset 0 0  30px blue ; 
+    border-radius: 2px;
+}
+footer .social-links li:nth-child(2) {
+
+    box-shadow:inset 0 0  30px  lightgreen ; 
+    border-radius: 2px;
+}
+footer .social-links li:last-child {
+
+    border-radius: 2px;
+}
+
+
+
+
+
+footer .social-links li a {
+
+    display: inline-block ;
+    width: inherit ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: auto ;
+  
+    
+
+} 
+footer .social-links li:hover {
+    background: var(--dell);
+
+    
+    
+}
+    
+
+
+   
+
+
+
+footer .social-links a img {
+
+  height: 2.5em;
+ 
+  width: 2.5em ;
+ 
+}
+
+.width {
+
+    position: absolute ;
+    top: 50% ;
+    left: 40% ;
+    font-weight:  700;
+    color: red ;
+}
+
+
+@media screen and (max-width: 850px) {
+    main .hero {
+
+        background: none;
+        padding: 20px  5px;
+        height: 30vh;
+    }
+
+    
+
+    main .hero .title {
+
+
+        padding: 0 ;
+        font-size: 1em;
+        flex-basis: 100%;
+        align-self: center;
+        border: 0 ;
+    }
+
+
+    main .hero .title {
+        width: 100% ;
+    }
+    
+
+
+ 
+    
+
+    
+
+
+    main .hero  .background-image {
+    
+       display: none ;
+     
+     } 
+    main h3 {
+
+        font-size: 1em ;
+    }
+
+    main .cards .card {
+
+        flex-basis: 48% ;
+       
+    }
+
+
+    
+    .about p {
+
+        max-width: 98%;
+        line-height: 1.5em;
+    }
+
+   
+
+}
+
+@media screen and (max-width: 529px) {
+
+  
+
+    nav  .menu {
+        display: block;
+        cursor: pointer;
+        z-index: 100;
+       
+    }
+    nav  .menu img {
+        width: 2em ;
+    }
+
+    nav {
+       
+        position: relative;
+    }
+
+   
+  
+
+    nav .nav-links {
+
+        display: flex;
+        align-items: center ;
+        justify-content: space-between;
+        list-style-type: none;
+        flex-direction:  column;
+        width: 100% ;
+        background: var(--gainsboro);
+        position: absolute;
+        top:  0 ;
+        left: -100% ;
+        transition:  all 0.5s ease-in-out;
+        
+        
+       }
+       nav .nav-links li {
+
+        margin: 1em 0 ;
+       }
+
+
+
+
+
+    .contact .contact-info {
+
+        width: 98%;;
+    }
+   
+
+        main .cards .card  {
+        flex-basis:100% ;
+     }
+
+     .about p {
+
+        width: 90% ;
+     }
+       
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+

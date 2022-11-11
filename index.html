@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demoproject</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="brand-name">
+        <h1>Demo</h1>
+        <span>project</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">home</a></li>
+        <li><a href="#showcase">showcase</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="#about">about</a></li>
+      </ul>
+      <div class="menu">
+        <img src="icons/hamburger.png" alt="hamburger menu icon" />
+      </div>
+    </nav>
+    <main>
+      <section class="hero">
+        <div class="title">
+          <h2>this is the title of our page</h2>
+          <small>more information regarding our page</small>
+        </div>
+        <div class="background-image">
+          <img src="images/background-image.png" alt="page background image" />
+        </div>
+      </section>
+
+      <section id="showcase" class="showcase">
+        <h3>Showcase</h3>
+
+        <h4>frontend practices</h4>
+        <div class="cards">
+          <div class="card">
+            <div class="card-title">
+              <div class="card-img">
+                <img src="icons/rwd.png" alt="responsive web design" />
+              </div>
+              <div class="card-text"><b>RWD</b></div>
+            </div>
+            <div class="card-body">
+              <b>(RWD) </b>Responsive web design is creating a design that fits
+              perfectly on many devices with differing screen sizes
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-img">
+                <img src="icons/seo.png" alt="seo image" />
+              </div>
+              <div class="card-text"><b>SEO</b></div>
+            </div>
+            <div class="card-body">
+              SEO - search engine optimatisation is optimising your site to
+              appear on top of google search results page
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-img"><img src="icons/testing.png" alt="" /></div>
+              <div class="card-text"><b>Testing</b></div>
+            </div>
+            <div class="card-body">
+              developers write tests against code to ensure that websites run
+              smoothly
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-img">
+                <img src="icons/performance.png" alt="web perfomance" />
+              </div>
+              <div class="card-text"><b>WEB PERFOMANCE</b></div>
+            </div>
+            <div class="card-body">
+              it is optimising a site for a faster web-page loading speed for
+              better user-experince and convinience
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <div class="card-img">
+                <img src="icons/bundler.png" alt=" linting icon" />
+              </div>
+              <div class="card-text"><b>bundlers</b></div>
+            </div>
+            <div class="card-body">
+              the are used to bundle our code into a file when deploying our app
+              for production
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">
+              <div class="card-img">
+                <img
+                  src="icons/browser-testing.png"
+                  alt=" cross browser testing icon"
+                />
+              </div>
+              <div class="card-text"><b>cross browser testing</b></div>
+            </div>
+            <div class="card-body">
+              is to make sure our application runs smoothly across multiple
+              browser-platforms
+            </div>
+          </div>
+        </div>
+        <h4>dropdowns</h4>
+        <div class="dropdown">
+          <div class="first-item">
+            <div class="title">
+              <div class="text">html</div>
+              <div class="icon">
+                <img src="icons/left-caret.png" alt="left arrow" />
+              </div>
+            </div>
+            <div class="body">
+              Html is the primary language used to create the basic structure of
+              a website
+            </div>
+          </div>
+          <div class="second-item">
+            <div class="title">
+              <div class="text">css</div>
+              <div class="icon">
+                <img src="icons/left-caret.png" alt="left arrow" />
+              </div>
+            </div>
+            <div class="body">
+              css is used to style html eg adding colors , changing layouts ,
+              giving more life and feel html
+            </div>
+          </div>
+          <div class="third-item">
+            <div class="title">
+              <div class="text">javascript</div>
+              <div class="icon">
+                <img src="icons/left-caret.png" alt=" left arrow" />
+              </div>
+            </div>
+            <div class="body">
+              javascript adds functionaly to a website . facilitates
+              user-interaction by listening and responding to events such as
+              click of button , mouse moving and so
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <h3>contact</h3>
+        <p>for any queries kindly send an email to the following address</p>
+        <p class="contact-info">
+          <b><img src="icons/email-address.png" alt="email address icon" /></b>
+          <a href="mailto:ezrajuba1@gmail.com">send mail</a>
+        </p>
+      </section>
+      <section id="about" class="about">
+        <h3>about</h3>
+        <h5>frontend developer</h5>
+        <small><b>author</b> ezra juba</small>
+        <p>
+          Hi there , Iam a <b>Frontend Developer</b> very procifient in
+          <b>HTML CSS and Javascript</b>. As a Frontend developer i build
+          elements of an application that are directly accesesed by end-users
+          making designs that are aesthetically pleasing offering best user
+          experience.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <ul class="social-links">
+        <li>
+          <a href="#"><img src="icons/facebook.png" alt="facebook icon" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="icons/twitter.png" alt=" twitter" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="icons/github.png" alt="github" /></a>
+        </li>
+      </ul>
+    </footer>
+
+    <div class="width">0</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
